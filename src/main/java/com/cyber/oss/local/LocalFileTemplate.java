@@ -45,6 +45,7 @@ public class LocalFileTemplate implements FileTemplate {
 	}
 
 	/**
+	 * 删除bucket
 	 * @param bucketName bucket名称
 	 * @see <a href= Documentation</a>
 	 */
@@ -89,6 +90,7 @@ public class LocalFileTemplate implements FileTemplate {
 	}
 
 	/**
+	 * 删除文件
 	 * @param bucketName
 	 * @param objectName
 	 * @throws Exception
@@ -112,7 +114,7 @@ public class LocalFileTemplate implements FileTemplate {
 	}
 
 	/**
-	 * 根据文件前置查询文件
+	 * 根据文件前缀查询文件
 	 * @param bucketName bucket名称
 	 * @param prefix 前缀
 	 * @param recursive 是否递归查询

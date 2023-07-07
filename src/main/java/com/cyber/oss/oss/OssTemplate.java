@@ -56,6 +56,7 @@ public class OssTemplate implements InitializingBean, FileTemplate {
 	}
 
 	/**
+	 * 获取bucket
 	 * @param bucketName bucket名称
 	 * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/s3-2006-03-01/ListBuckets">AWS
 	 * API Documentation</a>
@@ -66,6 +67,7 @@ public class OssTemplate implements InitializingBean, FileTemplate {
 	}
 
 	/**
+	 * 删除bucket
 	 * @param bucketName bucket名称
 	 * @see <a href=
 	 * "http://docs.aws.amazon.com/goto/WebAPI/s3-2006-03-01/DeleteBucket">AWS API
@@ -77,7 +79,7 @@ public class OssTemplate implements InitializingBean, FileTemplate {
 	}
 
 	/**
-	 * 根据文件前置查询文件
+	 * 根据文件前缀查询文件
 	 * @param bucketName bucket名称
 	 * @param prefix 前缀
 	 * @param recursive 是否递归查询

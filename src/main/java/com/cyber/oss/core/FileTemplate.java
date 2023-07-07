@@ -28,8 +28,8 @@ public interface FileTemplate extends InitializingBean {
 	List<Bucket> getAllBuckets();
 
 	/**
+	 * 删除bucket
 	 * @param bucketName bucket名称
-	 * @see <a href= Documentation</a>
 	 */
 	void removeBucket(String bucketName);
 
@@ -60,6 +60,12 @@ public interface FileTemplate extends InitializingBean {
 	 */
 	S3Object getObject(String bucketName, String objectName);
 
+	/**
+	 * 删除文件
+	 * @param bucketName
+	 * @param objectName
+	 * @throws Exception
+	 */
 	void removeObject(String bucketName, String objectName) throws Exception;
 
 	/**
@@ -70,7 +76,7 @@ public interface FileTemplate extends InitializingBean {
 	}
 
 	/**
-	 * 根据文件前置查询文件
+	 * 根据文件前缀查询文件
 	 * @param bucketName bucket名称
 	 * @param prefix 前缀
 	 * @param recursive 是否递归查询
