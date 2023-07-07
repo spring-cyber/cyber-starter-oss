@@ -1,7 +1,6 @@
 package com.cyber.oss.oss;
 
 import com.cyber.oss.core.FileProperties;
-import com.cyber.oss.core.FileTemplate;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -20,7 +19,7 @@ public class OssAutoConfiguration {
 	@Primary
 	@ConditionalOnMissingBean(OssTemplate.class)
 	@ConditionalOnProperty(name = "file.oss.enable", havingValue = "true")
-	public FileTemplate ossTemplate() {
+	public OssTemplate ossTemplate() {
 		return new OssTemplate(properties);
 	}
 
