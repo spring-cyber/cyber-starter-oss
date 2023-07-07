@@ -55,10 +55,10 @@
     </developers>
 
     <scm>
-        <tag>cyber-starter-search</tag>
-        <url>https://github.com/spring-cyber/cyber-starter-search</url>
-        <connection>scm:git:https://github.com/spring-cyber/cyber-starter-search.git</connection>
-        <developerConnection>scm:git:https://github.com/spring-cyber/cyber-starter-search.git</developerConnection>
+        <tag>cyber-starter-oss</tag>
+        <url>https://github.com/spring-cyber/cyber-starter-oss</url>
+        <connection>scm:git:https://github.com/spring-cyber/cyber-starter-oss.git</connection>
+        <developerConnection>scm:git:https://github.com/spring-cyber/cyber-starter-oss.git</developerConnection>
     </scm>
 
     <dependencies>
